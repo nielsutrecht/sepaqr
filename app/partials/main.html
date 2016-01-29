@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">IBAN</div>
+        <div class="col-md-10">
+            NL
+            <input type="text" ng-model="ibanControl" ng-minlength="2" ng-maxlength="2" width="2" ng-change="updateQr()">
+            <select ng-model="bank" ng-change="selectBank()">
+                <option ng-repeat="(k, v) in banks" value="{{k}}">{{k}}</option>
+            </select>
+            <input typ="text" ng-model="ibanAccount" ng-minlength="10" ng-maxlength="10" width="10" ng-change="updateQr()">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10">{{bankName}} - {{bankBic}}</div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Name</div>
+        <div class="col-md-10"><input typ="text" ng-model="name" ng-minlength="10" ng-maxlength="10" width="10" ng-change="updateQr()"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Amount</div>
+        <div class="col-md-10">EUR <input typ="text" ng-model="amount" ng-minlength="10" ng-maxlength="10" width="10" ng-change="updateQr()"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2">Description</div>
+        <div class="col-md-10"><input typ="text" ng-model="description" ng-minlength="10" ng-maxlength="10" width="10" ng-change="updateQr()"></div>
+    </div>
+    <div id="qrcode"></div>
+</div>
+
+
