@@ -16,6 +16,9 @@ appModule.controller('MainCtrl', ['$scope', '$routeParams', '$http', function($s
 
 
     $scope.updateQr = function() {
+        if(!$scope.ibanControl || !$scope.bank || !$scope.ibanAccount) {
+            return;
+        }
         var iban = 'NL' + $scope.ibanControl + $scope.bank + $scope.ibanAccount;
         var payload = [
         	'BCD',
@@ -28,7 +31,7 @@ appModule.controller('MainCtrl', ['$scope', '$routeParams', '$http', function($s
           'EUR' + $scope.amount,
           'SEPA',
           '',
-          '',
+          $scope.description,
           ''].join('\n');
         if(!$scope.qrcode) {
             $scope.qrcode = new QRCode(document.getElementById("qrcode"), {
