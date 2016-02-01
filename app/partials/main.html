@@ -1,35 +1,70 @@
-<div class="container">
-    <div class="row">
-        <div class="col-md-2">IBAN</div>
-        <div class="col-md-10">
-            NL
-            <input type="text" ng-model="ibanControl" ng-minlength="0" ng-maxlength="2" width="2" ng-change="updateQr()">
-            <select ng-model="bank" ng-change="selectBank()">
-                <option ng-repeat="(k, v) in banks" value="{{k}}">{{k}}</option>
-            </select>
-            <input type="text" ng-model="ibanAccount" ng-minlength="2" ng-maxlength="16" width="10" ng-change="updateQr()">
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-2"> </div>
-        <div class="col-md-10"><span ng-if="bank">{{bankName}} - {{bankBic}}</span>&nbsp;</div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">Name</div>
-        <div class="col-md-10"><input type="text" ng-model="name" ng-minlength="1" ng-maxlength="20" width="10" ng-change="updateQr()"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">Amount</div>
-        <div class="col-md-10">EUR <input type="text" ng-model="amount" ng-minlength="1" ng-maxlength="10" width="10" ng-change="updateQr()"></div>
-    </div>
-    <div class="row">
-        <div class="col-md-2">Description</div>
-        <div class="col-md-10"><input type="text" ng-model="description" ng-minlength="1" ng-maxlength="30" width="10" ng-change="updateQr()"></div>
-    </div>
-    <div class="row">
-        <div id="qrcode"></div>
-    </div>
 
+<div class="container-fluid">
+    <form class="form-horizontal" role="form">
+        <div class="row">
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputBank" class="col-md-4 control-label">Bank:</label>
+                    <div class="col-md-8">
+                        <select id="inputBank" class="form-control" ng-model="bank" ng-change="selectBank()">
+                            <option ng-repeat="(k, v) in banks" value="{{k}}">{{k}}</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputBankInfo" class="col-md-4 control-label">Bank info:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputBankInfo" ng-model="bankInfo" readonly tabindex="-1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputAccount" class="col-md-4 control-label">Account number:</label>
+                    <div class="col-md-8">
+                        <input type="text" ng-model="accountNumber" class="form-control" id="inputAccount" placeholder="Account number" ng-change="changeAccountNumber()">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputIban" class="col-md-4 control-label">IBAN:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputIban" ng-model="iban" readonly tabindex="-1">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputName" class="col-md-4 control-label">Name:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="name" ng-change="updateQr()" ng-maxlength="70">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputAmount" class="col-md-4 control-label">Amount:</label>
+                    <div class="col-md-8">
+                        <input type="number" class="form-control" id="inputAmount" placeholder="Amount &euro;" ng-model="amount" ng-change="updateQr()" ng-maxlength="12">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <div class="form-group">
+                    <label for="inputDescription" class="col-md-4 control-label">Description:</label>
+                    <div class="col-md-8">
+                        <input type="text" class="form-control" id="inputDescription" placeholder="Description" ng-model="description" ng-change="updateQr()" ng-maxlength="140">
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12">
+                <div id="qrcode"></div>
+            </div>
+        </div><!-- /.row this actually does not appear to be needed with the form-horizontal -->
+    </form>
 </div>
 
 

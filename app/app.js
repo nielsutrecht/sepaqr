@@ -1,5 +1,31 @@
 var appModule = angular.module('sepaQr', ['ngRoute']);
 
+var toIban = function(bank, account) {
+    account = String('0000000000' + account).slice(-10);
+
+    var control = '00';
+
+    var s = bank + account + 'NL' + control;
+
+    var digitString = '';
+    for (var index = 0; index < s.length; index++) {
+        var code = s[index].toUpperCase().charCodeAt(0);
+        digitString += code < 65 ? s[index] : code - 55;
+    }
+
+    var m = 0;
+    for (index = 0; index < digitString.length; ++index) {
+        m = ((m * 10) + (digitString[index] |0)) % 97;
+    }
+
+    control = (98 - m) + '';
+    if(control.length === 1) {
+        control = '0' + control;
+    }
+
+    return 'NL' + control + bank + account;
+}
+
 appModule.controller('MainCtrl', ['$scope', '$routeParams', '$http', function($scope, $routeParams, $http) {
     $scope.banks = {};
 
@@ -11,15 +37,25 @@ appModule.controller('MainCtrl', ['$scope', '$routeParams', '$http', function($s
     $scope.selectBank = function() {
         $scope.bankName = $scope.banks[$scope.bank].bank_name;
         $scope.bankBic = $scope.banks[$scope.bank].BIC;
+        $scope.bankInfo = $scope.bankBic + ' (' + $scope.bankName + ')';
+
+        $scope.changeAccountNumber();
+    }
+
+    $scope.changeAccountNumber = function() {
+        $scope.iban = null;
+        if($scope.bank && $scope.accountNumber) {
+            $scope.iban = toIban($scope.bank, $scope.accountNumber);
+        }
+
         $scope.updateQr();
     }
 
-
     $scope.updateQr = function() {
-        if(!$scope.ibanControl || !$scope.bank || !$scope.ibanAccount) {
+        if(!$scope.iban) {
             return;
         }
-        var iban = 'NL' + $scope.ibanControl + $scope.bank + $scope.ibanAccount;
+
         var payload = [
         	'BCD',
           '002',
@@ -27,7 +63,7 @@ appModule.controller('MainCtrl', ['$scope', '$routeParams', '$http', function($s
           'SCT',
           $scope.bankBic,
           $scope.name,
-          iban,
+          $scope.iban,
           'EUR' + $scope.amount,
           'SEPA',
           '',

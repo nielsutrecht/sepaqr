@@ -1,0 +1,266 @@
+{
+  "ABNA":{
+    "BIC":"ABNANL2A",
+    "bank_name":"ABN AMRO BANK N.V"
+  },
+  "AEGO":{
+    "BIC":"AEGONL2U",
+    "bank_name":"AEGON BANK NV"
+  },
+  "ANDL":{
+    "BIC":"ANDLNL2A",
+    "bank_name":"ANADOLUBANK NEDERLAND NV"
+  },
+  "ARBN":{
+    "BIC":"ARBNNL22",
+    "bank_name":"ACHMEA RETAIL BANK N.V."
+  },
+  "ARSN":{
+    "BIC":"ARSNNL21",
+    "bank_name":"ARGENTA SPAARBANK NV"
+  },
+  "ARTE":{
+    "BIC":"ARTENL2A",
+    "bank_name":"GE ARTESIA BANK"
+  },
+  "ASNB":{
+    "BIC":"ASNBNL21",
+    "bank_name":"ASN BANK"
+  },
+  "ASRB":{
+    "BIC":"ASRBNL2R",
+    "bank_name":"ASR BANK N.V."
+  },
+  "ATBA":{
+    "BIC":"ATBANL2A",
+    "bank_name":"AMSTERDAM TRADE BANK N.V"
+  },
+  "BBRU":{
+    "BIC":"BBRUNL2X",
+    "bank_name":"ING BELGIE NV"
+  },
+  "BCDM":{
+    "BIC":"BCDMNL22",
+    "bank_name":"BANQUE CHAABI DU MAROC"
+  },
+  "BCIT":{
+    "BIC":"BCITNL2A",
+    "bank_name":"INTESA SANPAOLO S.P.A"
+  },
+  "BICK":{
+    "BIC":"BICKNL2A",
+    "bank_name":"BINCKBANK N.V."
+  },
+  "BKMG":{
+    "BIC":"BKMGNL2A",
+    "bank_name":"BANK MENDES GANS N.V."
+  },
+  "BLGW":{
+    "BIC":"BLGWNL21",
+    "bank_name":"BLG WONEN"
+  },
+  "BNGH":{
+    "BIC":"BNGHNL2G",
+    "bank_name":"NV BANK NEDERLANDSE GEMEENTEN"
+  },
+  "BNPA":{
+    "BIC":"BNPANL2A",
+    "bank_name":"BNP PARIBAS S.A. THE NETH. BRANCH"
+  },
+  "BOFA":{
+    "BIC":"BOFANLNX",
+    "bank_name":"BANK OF AMERICA N.A."
+  },
+  "BOFS":{
+    "BIC":"BOFSNL21002",
+    "bank_name":"BANK OF SCOTLAND PCC AMSTERDAM BRANCH"
+  },
+  "BOTK":{
+    "BIC":"BOTKNL2X",
+    "bank_name":"BANK OF TOKYO-MITSUBISHI UFJ"
+  },
+  "CITC":{
+    "BIC":"CITCNL2A",
+    "bank_name":"CITCO BANK NEDERLAND"
+  },
+  "CITI":{
+    "BIC":"CITINL2X",
+    "bank_name":"CITIBANK INTERNATIONAL PLC"
+  },
+  "COBA":{
+    "BIC":"COBANL2X",
+    "bank_name":"COMMERZBANK AG"
+  },
+  "DEUT":{
+    "BIC":"DEUTNL2N",
+    "bank_name":"DEUTSCHE BANK"
+  },
+  "DHBN":{
+    "BIC":"DHBNNL2R",
+    "bank_name":"DEMIR-HALK BANK (NEDERLAND) N.V."
+  },
+  "DLBK":{
+    "BIC":"DLBKNL2A",
+    "bank_name":"DELTA LLOYD BANK NV"
+  },
+  "DNIB":{
+    "BIC":"DNIBNL2G",
+    "bank_name":"NIBC BANK NV"
+  },
+  "FBHL":{
+    "BIC":"FBHLNL2A",
+    "bank_name":"CREDIT EUROPE BANK N.V"
+  },
+  "FLOR":{
+    "BIC":"FLORNL2A",
+    "bank_name":"DE NEDERLANDSCHE BANK N.V."
+  },
+  "FRBK":{
+    "BIC":"FRBKNL2L",
+    "bank_name":"FRIESLAND BANK N.V."
+  },
+  "FRGH":{
+    "BIC":"FRGHNL21",
+    "bank_name":"FRIESCH GRONINGSE HYPOTHEEK BANK"
+  },
+  "FTSB":{
+    "BIC":"ABNANL2A",
+    "bank_name":"ABN AMRO BANK N.V."
+  },
+  "FVLB":{
+    "BIC":"FVLBNL22",
+    "bank_name":"F.VAN LANSCHOT BANKIERS N.V."
+  },
+  "GILL":{
+    "BIC":"GILLNL2A",
+    "bank_name":"THEODOOR GILISSEN N.V."
+  },
+  "HAND":{
+    "BIC":"HANDNL2A",
+    "bank_name":"(SVENSKA) HANDELSBANKEN AB"
+  },
+  "HHBA":{
+    "BIC":"HHBANL22",
+    "bank_name":"HOF HOORNEMAN BANKIERS"
+  },
+  "HSBC":{
+    "BIC":"HSBCNL2A",
+    "bank_name":"HSBC BANK PLC."
+  },
+  "ICBK":{
+    "BIC":"ICBKNL2A",
+    "bank_name":"INDUSTRIAL AND COMMERCIAL BANK OF CHINA"
+  },
+  "INGB":{
+    "BIC":"INGBNL2A",
+    "bank_name":"ING BANK N.V."
+  },
+  "INSI":{
+    "BIC":"INSINL2A",
+    "bank_name":"INSINGER DE BEAUFORT NV"
+  },
+  "ISBK":{
+    "BIC":"ISBKNL2A",
+    "bank_name":"ISBANK"
+  },
+  "KABA":{
+    "BIC":"KABANL2A",
+    "bank_name":"YAPI KREDI BANK NEDERLAND NV"
+  },
+  "KASA":{
+    "BIC":"KASANL2A",
+    "bank_name":"KAS BANK N.V."
+  },
+  "KNAB":{
+    "BIC":"KNABNL2H",
+    "bank_name":"KNAB"
+  },
+  "KOEX":{
+    "BIC":"KOEXNL2A",
+    "bank_name":"KOREA EXCHANGE BANK"
+  },
+  "KRED":{
+    "BIC":"KREDNL2X",
+    "bank_name":"KBC BANK NEDERLAND N.V."
+  },
+  "LOCY":{
+    "BIC":"LOCYNL2A",
+    "bank_name":"LOMBARD ODIER DARIER HENTSCH & CIE"
+  },
+  "LOYD":{
+    "BIC":"LOYDNL2A",
+    "bank_name":"LLOYDS TSB BANK PLC"
+  },
+  "LPLN":{
+    "BIC":"LPLNNL2F",
+    "bank_name":"LEASEPLAN CORPORATION NV"
+  },
+  "MHCB":{
+    "BIC":"MHCBNL2A",
+    "bank_name":"MIZUHO CORPORATE BANK NEDERLAND N.V"
+  },
+  "NNBA":{
+    "BIC":"NNBANL2G",
+    "bank_name":"NATIONALE-NEDERLANDEN BANK N.V."
+  },
+  "NWAB":{
+    "BIC":"NWABNL2G",
+    "bank_name":"NEDERLANDSE WATERSCHAPSBANK N.V."
+  },
+  "OVBN":{
+    "BIC":"OVBNNL22",
+    "bank_name":"LEVOB BANK N.V."
+  },
+  "RABO":{
+    "BIC":"RABONL2U",
+    "bank_name":"RABOBANK GROEP"
+  },
+  "RBOS":{
+    "BIC":"RBOSNL2A",
+    "bank_name":"ROYAL BANK OF SCOTLAND"
+  },
+  "RBRB":{
+    "BIC":"RBRBNL21",
+    "bank_name":"REGIOBANK"
+  },
+  "SNSB":{
+    "BIC":"SNSBNL2A",
+    "bank_name":"SNS BANK N.V"
+  },
+  "SOGE":{
+    "BIC":"SOGENL2A",
+    "bank_name":"SOCIETE GENERALE"
+  },
+  "STAL":{
+    "BIC":"STALNL2G",
+    "bank_name":"STAALBANKIERS N.V"
+  },
+  "TEBU":{
+    "BIC":"TEBUNL2A",
+    "bank_name":"THE ECONOMY BANK N.V."
+  },
+  "TRIO":{
+    "BIC":"TRIONL2U",
+    "bank_name":"TRIODOS BANK N.V"
+  },
+  "UBSW":{
+    "BIC":"UBSWNL2A",
+    "bank_name":"UBS BANK (NETHERLANDS) BV"
+  },
+  "UGBI":{
+    "BIC":"UGBINL2A",
+    "bank_name":"GARANTIBANK INTERNATIONAL N.V."
+  },
+  "VOWA":{
+    "BIC":"VOWANL21",
+    "bank_name":"VOLKSWAGEN BANK"
+  },
+  "VPVG":{
+    "BIC":"VPVGNL22",
+    "bank_name":"VPV BANKIERS N.V."
+  },
+  "ZWLB":{
+    "BIC":"ZWLBNL21",
+    "bank_name":"ZWITSERLEVENBANK"
+  }
+}
